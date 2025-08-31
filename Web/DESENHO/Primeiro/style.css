@@ -1,0 +1,704 @@
+:root {
+    --azul020: #020270;
+    --preto111: #111;
+    --branco: whitesmoke;
+    --preto1615: #161515;
+    --preto1e: #1e1e1e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, var(--azul020) 60%, var(--preto111) 62%);
+    overflow: hidden;
+}
+
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+}
+
+.star.one {
+    position: absolute;
+    top: 1vw;
+    left: 0.5vh;
+    width: 0.5vw;
+    height: 1vh;
+    border-radius: 100%;
+    filter: blur(0.15vw);
+    background: var(--branco);
+}
+
+.star.two {
+    position: absolute;
+    top: 15vw;
+    left: 5vh;
+    width: 0.5vw;
+    height: 1vh;
+    border-radius: 100%;
+    filter: blur(0.15vw);
+    background: var(--branco);
+}
+
+.star.third {
+    position: absolute;
+    top: 6vw;
+    left: 15vh;
+    width: 0.5vw;
+    height: 1vh;
+    border-radius: 100%;
+    filter: blur(0.15vw);
+    background: var(--branco);
+}
+
+.star.four {
+    position: absolute;
+    top: 10vw;
+    left: 45vh;
+    width: 0.5vw;
+    height: 1vh;
+    border-radius: 100%;
+    filter: blur(0.15vw);
+    background: var(--branco);
+}
+
+.star.five {
+    position: absolute;
+    top: 4vw;
+    left: 65vh;
+    width: 0.5vw;
+    height: 1vh;
+    border-radius: 100%;
+    filter: blur(0.15vw);
+    background: var(--branco);
+}
+
+.star.sixth {
+    position: absolute;
+    top: 7vw;
+    left: 90vh;
+    width: 0.5vw;
+    height: 1vh;
+    border-radius: 100%;
+    filter: blur(0.15vw);
+    background: var(--branco);
+}
+
+.star.seven {
+    position: absolute;
+    top: 15vw;
+    left: 55vw;
+    width: 0.5vw;
+    height: 1vh;
+    border-radius: 100%;
+    filter: blur(0.15vw);
+    background: var(--branco);
+}
+
+.star.eight {
+    position: absolute;
+    top: 6vw;
+    left: 70vw;
+    width: 0.5vw;
+    height: 1vh;
+    border-radius: 100%;
+    filter: blur(0.15vw);
+    background: var(--branco);
+}
+
+.star.nine {
+    position: absolute;
+    top: 10vw;
+    left: 80vw;
+    width: 0.5vw;
+    height: 1vh;
+    border-radius: 100%;
+    filter: blur(0.15vw);
+    background: var(--branco);
+}
+
+.star.ten {
+    position: absolute;
+    top: 8vw;
+    left: 90vw;
+    width: 0.5vw;
+    height: 1vh;
+    border-radius: 100%;
+    filter: blur(0.15vw);
+    background: var(--branco);
+}
+
+.moonBright {
+    position: absolute;
+    top: 8vh;
+    left: 55vw;
+    width: 5vw;
+    height: 5vw;
+    background: var(--branco);
+    border-radius: 100%;
+    filter: blur(1vw);
+    transition: 0.5s ease;
+}
+
+.moonLayer {
+    position: absolute;
+    top: 8vh;
+    left: 55vw;
+    width: 5vw;
+    height: 5vw;
+    background: whitesmoke;
+    border-radius: 100%;
+    filter: blur(0.1vw);
+}
+
+.moon {
+    position: absolute;
+    top: 8vh;
+    left: 55vw;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 100%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/*Arvores*/
+.scene {
+    width: 100vw;
+    height: 100vh;
+}
+
+/*Blur nivel 0*/
+.tree1-box1.blur,
+.tree2-box1.blur,
+.tree3-box1.blur,
+.tree4-box1.blur,
+.tree5-box1.blur,
+.tree6-box1.blur {
+    filter: blur(0.08vw);
+}
+
+/*Blur nivel 1*/
+.tree1-box1.blur1,
+.tree2-box1.blur1,
+.tree3-box1.blur1,
+.tree4-box1.blur1,
+.tree5-box1.blur1,
+.tree6-box1.blur1 {
+    filter: blur(0.1vw);
+}
+
+/*Blur nivel 2*/
+.tree1-box1.blur2,
+.tree2-box1.blur2,
+.tree3-box1.blur2,
+.tree4-box1.blur2,
+.tree5-box1.blur2,
+.tree6-box1.blur2 {
+    filter: blur(0.2vw);
+}
+
+/*Blur nivel 3*/
+.tree1-box1.blur3,
+.tree2-box1.blur3,
+.tree3-box1.blur3,
+.tree4-box1.blur3,
+.tree5-box1.blur3,
+.tree6-box1.blur3 {
+    filter: blur(0.3vw);
+}
+
+.tree1-box1 {
+    width: 0;
+    height: 0;
+    border-left: 1.50vw solid transparent;
+    /* lado esquerdo transparente */
+    border-right: 1.50vw solid transparent;
+    /* lado direito transparente */
+    border-bottom: 3vw solid var(--preto1e);
+    /* base do triângulo (cor da árvore) */
+}
+
+.tree2-box1 {
+    position: absolute;
+    top: 1vw;
+    width: 0;
+    height: 0;
+    border-left: 1.45vw solid transparent;
+    /* lado esquerdo transparente */
+    border-right: 1.45vw solid transparent;
+    /* lado direito transparente */
+    border-bottom: 3vw solid var(--preto1615);
+    /* base do triângulo (cor da árvore) */
+}
+
+.tree3-box1 {
+    position: absolute;
+    top: 2vw;
+    width: 0;
+    height: 0;
+    border-left: 1.5vw solid transparent;
+    /* lado esquerdo transparente */
+    border-right: 1.5vw solid transparent;
+    /* lado direito transparente */
+    border-bottom: 3vw solid var(--preto111);
+    /* base do triângulo (cor da árvore) */
+}
+
+.tree4-box1 {
+    position: absolute;
+    top: -1vw;
+    width: 0;
+    height: 0;
+    border-left: 1.5vw solid transparent;
+    /* lado esquerdo transparente */
+    border-right: 1.5vw solid transparent;
+    /* lado direito transparente */
+    border-bottom: 3vw solid var(--preto1615);
+    /* base do triângulo (cor da árvore) */
+}
+
+.tree5-box1 {
+    position: absolute;
+    top: -1.8vw;
+    width: 0;
+    height: 0;
+    border-left: 1.5vw solid transparent;
+    /* lado esquerdo transparente */
+    border-right: 1.5vw solid transparent;
+    /* lado direito transparente */
+    border-bottom: 3vw solid var(--preto1615);
+    /* base do triângulo (cor da árvore) */
+}
+
+.tree6-box1 {
+    position: absolute;
+    left: 1.2vw;
+    background: var(--preto111);
+    width: 0.5vw;
+    height: 5vw;
+    z-index: 999;
+}
+
+.clouds {
+    width: 100vw;
+    height: 45vh;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.clouds.active {
+    opacity: 1;
+}
+
+.cloud1::before,
+.cloud1::after {
+    content: '';
+    position: absolute;
+    background: #01013e;
+    width: 9vw;
+    height: 6vw;
+    border-radius: 50%;
+    top: 0vw;
+    left: -0.5vw;
+    filter: blur(1.3vw);
+}
+
+.cloud1::after {
+    width: 8vw;
+    height: 5vw;
+    top: 3vw;
+    left: 4vw;
+    filter: blur(1vw);
+}
+
+.cloud2::before,
+.cloud2::after {
+    content: '';
+    position: absolute;
+    background: #01013e;
+    width: 9vw;
+    height: 6vw;
+    border-radius: 50%;
+    top: 0vw;
+    left: 5vw;
+    filter: blur(1.2vw);
+}
+
+.cloud2::after {
+    width: 8vw;
+    height: 5vw;
+    top: 3vw;
+    left: 10vw;
+    filter: blur(1vw);
+}
+
+.cloud3::before,
+.cloud3::after {
+    content: '';
+    position: absolute;
+    background: #01013e;
+    width: 9vw;
+    height: 6vw;
+    border-radius: 50%;
+    top: 0vw;
+    left: 11vw;
+    filter: blur(2vw);
+}
+
+.cloud3::after {
+    width: 8vw;
+    height: 5vw;
+    top: 3vw;
+    left: 15vw;
+    filter: blur(0.8vw);
+}
+
+.cloud4::before,
+.cloud4::after {
+    content: '';
+    position: absolute;
+    background: #01013e;
+    width: 9vw;
+    height: 6vw;
+    border-radius: 50%;
+    top: 0vw;
+    left: 11vw;
+    filter: blur(2vw);
+}
+
+.cloud4::after {
+    width: 8vw;
+    height: 5vw;
+    top: 3vw;
+    left: 15vw;
+    filter: blur(0.8vw);
+}
+
+.cloud-box1 {
+    position: absolute;
+    left: 8vw;
+    top: 3.5vw;
+    width: 25vw;
+    height: 20vh;
+    transition: 3s ease;
+    animation: mover1 10s ease infinite;
+}
+
+@keyframes mover1 {
+    0% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        left: 7.5vw;
+        top: 3vw;
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.cloud-box2 {
+    position: absolute;
+    left: 30vw;
+    animation: mover2 10s ease infinite;
+}
+
+@keyframes mover2 {
+    0% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        left: 28.5vw;
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.cloud-box3 {
+    position: absolute;
+    top: 2.5vw;
+    left: 40vw;
+    z-index: 1;
+    animation: mover3 10s ease infinite;
+}
+
+@keyframes mover3 {
+    0% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        left: 39.5vw;
+        top: 2vw;
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.cloud-box4 {
+    position: absolute;
+    top: 8vw;
+    left: 75vw;
+    z-index: 999;
+    animation: mover4 10s ease infinite;
+}
+
+@keyframes mover4 {
+    0% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        left: 73vw;
+        top: 6vw;
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.cloud-box5 {
+    position: absolute;
+    top: 6vw;
+    left: 1vw;
+    filter: blur(2vw);
+    z-index: 1;
+    animation: mover5 30s ease infinite;
+}
+
+@keyframes mover5 {
+    0% {
+        left: 0vw;
+    }
+
+    50% {
+        left: 90vw;
+    }
+
+    100% {
+        left: 0vw;
+    }
+}
+
+.montanhaBox {
+    position: absolute;
+    right: -4.5vw;
+    top: 3.5vw;
+    width: 100vw;
+    height: 25vw;
+}
+
+.montanha1 {
+    position: absolute;
+    top: 11vw;
+    right: 0vw;
+    width: 15vw;
+    height: 14vw;
+    background: linear-gradient(to top, #111 2%, #010123 100%);
+    clip-path: polygon(0% 100%, 15% 65%, 25% 75%, 35% 55%,
+            45% 70%, 55% 45%, 65% 65%, 75% 50%,
+            85% 70%, 100% 100%);
+    z-index: 4;
+}
+
+.montanha2 {
+    position: absolute;
+    top: 0vw;
+    right: 5vw;
+    width: 16vw;
+    height: 25vw;
+    background: linear-gradient(to top, #111 2%, #010123 100%);
+    clip-path: polygon(0% 100%, 15% 65%, 25% 75%, 35% 55%,
+            45% 70%, 55% 45%, 65% 65%, 75% 50%,
+            85% 70%, 100% 100%);
+    z-index: 5;
+}
+
+.montanha3 {
+    position: absolute;
+    top: -5vw;
+    right: 6vw;
+    width: 16vw;
+    height: 30vw;
+    background: linear-gradient(to top, #111 2%, #010123 50%, #22226d 100%);
+    clip-path: polygon(0% 100%, 15% 65%, 25% 75%, 35% 55%,
+            45% 70%, 55% 45%, 65% 65%, 75% 50%,
+            85% 70%, 100% 100%);
+    z-index: 2;
+}
+
+.montanha4 {
+    position: absolute;
+    top: -5vw;
+    right: 5vw;
+    width: 25vw;
+    height: 30vw;
+    background: linear-gradient(to top, #111 2%, #010123 60%, #22226d 100%);
+    clip-path: polygon(0% 100%,
+            /* canto inferior esquerdo */
+            10% 70%,
+            /* pico montanha esquerda */
+            25% 85%,
+            /* descida montanha esquerda */
+            50% 35%,
+            /* pico montanha central (maior) */
+            75% 85%,
+            /* descida montanha direita */
+            90% 70%,
+            /* pico montanha direita */
+            100% 100%
+            /* canto inferior direito */
+        );
+    z-index: 1;
+}
+
+.montanha5 {
+    position: absolute;
+    top: -5vw;
+    right: 8vw;
+    width: 25vw;
+    height: 30vw;
+    background: linear-gradient(to top, #111 2%, #010123 60%, #22226d 100%);
+    d: linear-gradient(to top, #111 2%, #010123 100%);
+    clip-path: polygon(0% 100%, 15% 65%, 25% 75%, 35% 55%,
+            45% 70%, 55% 45%, 65% 65%, 75% 50%,
+            85% 70%, 100% 100%);
+    z-index: 2;
+}
+
+.lightsForest {
+    height: 25vw;
+    opacity: 1;
+    transition: 1s ease;
+}
+
+.lightsForest.desactive {
+    opacity: 0;
+}
+
+.firefly-box1,
+.firefly-box2,
+.firefly-box3,
+.firefly-box4,
+.firefly-box5 {
+    height: 3vw;
+    animation: moveFirefly 6s ease-in-out infinite alternate,
+        blinkFirefly 2s ease-in-out infinite;
+}
+
+.firefly-box1 {
+    position: absolute;
+    left: 5vw;
+    width: 3vw;
+}
+
+.firefly-box2 {
+    position: absolute;
+    top: 35vw;
+    left: 25vw;
+    width: 3vw;
+    animation-delay: 2s;
+}
+
+.firefly-box3 {
+    position: absolute;
+    top: 18vw;
+    left: 45vw;
+    width: 3vw;
+    animation-delay: 0.9s;
+    z-index: 3;
+}
+
+.firefly-box4 {
+    position: absolute;
+    top: 28vw;
+    left: 65vw;
+    width: 3vw;
+    animation-delay: 4s;
+    z-index: 3;
+}
+
+.firefly-box5 {
+    position: absolute;
+    top: 19vw;
+    left: 90vw;
+    width: 3vw;
+    animation-delay: 6s;
+    z-index: 15;
+}
+
+@keyframes moveFirefly {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(40px, -30px);
+    }
+
+    50% {
+        transform: translate(80px, 10px);
+    }
+
+    75% {
+        transform: translate(50px, 40px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes blinkFirefly {
+
+    0%,
+    100% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+
+.firefly1 {
+    position: absolute;
+    top: 0.5vw;
+    left: 0.6vw;
+    width: 0.5vw;
+    height: 0.5vw;
+    border-radius: 100vw;
+    filter: blur(0.25vw);
+    background: #f9f900;
+}
+
+.firefly2 {
+    position: absolute;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 100vw;
+    filter: blur(0.7vw);
+    background: #f9f900;
+}

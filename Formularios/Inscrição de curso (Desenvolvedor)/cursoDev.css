@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #101725;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+}
+
+.containerGlobal {
+    width: 100%;
+    padding: 0.5vw 2vw;
+    display: flex;
+    justify-content: center;
+    background: #101725;
+}
+
+.containerForm {
+    box-shadow: 0px 0px 6px black;
+    border-radius: 1vw;
+    min-width: 50%;
+    padding: 0.5vw;
+    background: #1c2841;
+}
+
+.containerImg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('img/pankaj-patel-bYiw48KLbmw-unsplash.jpg');
+    background-position: cover;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 20vh;
+    max-height: 50vh;
+    border-radius: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerImg h1 {
+    color: #f7d322;
+    font-size: 35px;
+}
+
+.info1 {
+    margin: 10px 0px;
+}
+
+.info1 h1 {
+    font-style: italic;
+    color: #f7d322;
+}
+
+.boxSuporte {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
+.boxSuporte h3 {
+    color: #DC3545;
+}
+
+.boxSuporte p {
+    color: whitesmoke;
+}
+
+.boxSuporte p a {
+    color: #339AF0;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.boxSuporte p a:hover {
+    letter-spacing: 0.5px;
+}
+
+.info1 .attention {
+    color: #f52b2b;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.input-group {
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 8px;
+    font-size: 16px;
+    border: 1px solid #f7d322;
+    border-radius: 4px;
+    outline: none;
+    background: transparent;
+    color: whitesmoke;
+}
+
+.input-group input.error {
+    border: 1px solid #f52b2b;
+    box-shadow: 0px 0px 10px #f52b2b;
+}
+
+.input-group .errorInput {
+    font-size: 15px;
+    font-style: italic;
+    color: #f52b2b;
+    position: relative;
+    top: 3px;
+}
+
+.input-group label {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    color: whitesmoke;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+    background: #1c2841;
+    padding: 0 4px;
+    letter-spacing: 2px;
+}
+
+.input-group label span::after {
+    color: #f52b2b;
+    content: '*';
+}
+
+.input-group input:focus+label span::after {
+    content: '';
+}
+
+.input-group input:not(:placeholder-shown)+label span::after {
+    content: '';
+}
+
+.input-group input:focus+label,
+.input-group input:not(:placeholder-shown)+label {
+    top: -8px;
+    left: 6px;
+    font-size: 15px;
+    color: #f7d322;
+    letter-spacing: 0px;
+}
+
+
+.select-group {
+    margin: 20px 0;
+}
+
+.select-group select {
+    width: 100%;
+    padding: 12px 8px;
+    font-size: 16px;
+    border: 1px solid #f7d322;
+    border-radius: 4px;
+    outline: none;
+    color: whitesmoke;
+    background: transparent;
+    cursor: pointer;
+}
+
+.select-group select option {
+    background: #101725;
+    color: #f7d322;
+}
+
+.radio-group {
+    margin: 20px 0;
+}
+
+.radio-group label {
+    color: #f7d322;
+    display: flex;
+    position: relative;
+    margin: 15px 0px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    display: none;
+    cursor: pointer;
+}
+
+.checkmark::after {
+    content: '>';
+    top: 2px;
+    height: 15px;
+    width: 15px;
+    color: #101725;
+    font-weight: 550;
+    border-radius: 50%;
+    transition: 0.2s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio-group input[type="radio"]:checked+.checkmark::after {
+    content: '>';
+    color: red;
+    font-size: 30px;
+    margin: 0px 5px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-group button {
+    padding: 5px 15px;
+    font-size: 1rem;
+    background: transparent;
+    border: 2px solid #f7d322;
+    color: #f7d322;
+    cursor: pointer;
+    font-weight: 550;
+    transition: 0.5s ease;
+}
+
+.btn-group button:hover {
+    background: #f7d322;
+    color: #1c2841;
+    box-shadow: 2px 1px 1px #1c2841, 4px 3px 1px #f7d322;
+}
+
+.btn-group.typing button::after {
+    content: "Enviando.";
+    animation: typing 3s steps(1, end) infinite;
+}
+
+@keyframes typing {
+    0% {
+        content: 'Enviando.';
+    }
+
+    25% {
+        content: 'Enviando..';
+    }
+
+    50% {
+        content: 'Enviando...';
+    }
+
+    75% {
+        content: 'Enviando..';
+    }
+
+    100% {
+        content: 'Enviando.';
+    }
+}
+
+.textarea-group {
+    margin: 20px 0px;
+}
+
+textarea {
+    border: 1px solid #f7d322;
+    border-radius: 5px;
+    background: transparent;
+    color: whitesmoke;
+    width: 100%;
+    resize: none;
+    font-size: 15px;
+    padding: 5px 10px;
+    outline: none;
+    transition: 0.5s ease;
+}
+
+textarea::placeholder {
+    color: rgba(245, 245, 245, 0.547);
+}
+
+textarea:disabled {
+    border: 1px solid #70707080;
+    size-adjust: none;
+    resize: none;
+    cursor: not-allowed;
+}
+
+textarea:disabled::placeholder {
+    color: #70707080;
+}
+
+/*Modal de alerta*/
+.modalAlerta {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translate(0, -60px);
+    opacity: 0;
+}
+
+.modalAlerta.active {
+    animation: mostrar 0.5s forwards;
+    visibility: visible;
+}
+
+@keyframes mostrar {
+    0% {
+        transform: translate(0, -60px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.modal {
+    border-radius: 12px;
+    background: #f52b2b97;
+    padding: 20px 30px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.modal .fechar {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #f7d322;
+    color: #f52b2b;
+    padding: 3px 7px;
+    border: 2px solid #1c2841;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.modal .fechar:hover {
+    color: #a11e1e;
+    background: #ad9419;
+}
+
+.modal p {
+    color: whitesmoke;
+}
+
+.modal p span {
+    font-style: italic;
+    color: #f7d322;
+}

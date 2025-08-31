@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="img/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="cursoDev.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição de curso | Formulário</title>
+</head>
+
+<body>
+
+    <div class="containerGlobal">
+
+        <div class="containerForm">
+
+            <div class="containerImg">
+                <h1>Curso de desenvolvedor</h1>
+            </div>
+
+            <div class="info1">
+                <h1>Informações pessoais</h1>
+
+                <div class="boxSuporte">
+                    <h3>Nosso suporte:</h3>
+                    <p><a target="_blank" href="mailto:erickvert159@gmail.com">📧 erickvert159@gmail.com</a></p>
+                    <p><a target="_blank" href="https://wa.me/17996440967">📞 (17) 99644-0967</a></p>
+                </div>
+                <p class="attention">Campos obrigatórios *</p>
+
+                <div class="input-group">
+                    <input type="text" name="Nome" id="nome" placeholder=" " autocomplete="off" required />
+                    <label for="Nome">Nome completo <span></span></label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="Telefone" id="telefone" placeholder=" " autocomplete="off" required />
+                    <label for="Telefone">Telefone <span></span></label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="Email" id="email" placeholder=" " autocomplete="off" required />
+                    <label for="Email">Email <span></span></label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="dataNascimento" id="dataNascimento" placeholder=" "
+                        autocomplete="off required" required />
+                    <label for="dataNascimento">Data de nascimento <span></span></label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="Cpf" id="cpf" placeholder=" " autocomplete="off" required />
+                    <label for="Cpf">Cpf <span></span></label>
+                </div>
+            </div>
+
+            <div class="info1">
+                <h1>Endereço</h1>
+
+                <div class="input-group">
+                    <input type="text" name="Rua" id="rua" placeholder=" " autocomplete="off" required />
+                    <label for="Rua">Rua <span></span></label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="Numero" id="numero" placeholder=" " autocomplete="off" />
+                    <label for="Numero">Numero</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="Bairro" id="bairro" placeholder=" " autocomplete="off" required />
+                    <label for="Bairro">Bairro <span></span></label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="Cep" id="cep" placeholder=" " autocomplete="off" required />
+                    <label for="Cep">Cep <span></span></label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="Cidade" id="cidade" placeholder=" " autocomplete="off" disabled />
+                    <label for="cidade">Cidade</label>
+                </div>
+            </div>
+
+            <div class="info1">
+                <h1>Candidato</h1>
+
+                <div class="select-group">
+                    <span style="color: red; font-size: 15px; position: relative; top: -3px;">Obrigatório*</span>
+                    <select id="escolaridade">
+                        <option value="" disabled selected>Selecione sua escolaridade </option>
+                        <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
+                        <option value="Ensino Fundamental Completo">Ensino Fundamental Completo</option>
+                        <option value="Ensino Medio Incompleto">Ensino Médio Incompleto</option>
+                        <option value="Ensino Medio Completo">Ensino Médio Completo</option>
+                        <option value="Ensino Superior Incompleto">Ensino Superior Incompleto</option>
+                        <option value="Ensino Superior Completo">Ensino Superior Completo</option>
+                    </select>
+                </div>
+                <div class="select-group">
+                    <span style="color: red; font-size: 15px; position: relative; top: -3px;">Obrigatório*</span>
+                    <select id="areaInteresse">
+                        <option value="" disabled selected>Área do interesse</option>
+                        <option value="Front-end">Front-end</option>
+                        <option value="Back-end">Back-end</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="Software">Software</option>
+                        <option value="Networking">Networking</option>
+                        <option value="System">System</option>
+                        <option value="Games">Games</option>
+                        <option value="Games-Mobile">Games-Mobile</option>
+                    </select>
+                </div>
+
+                <div class="radio-group">
+                    <label>Experiência com programação?<span style="color: red;">*</span></label>
+                    <label><input type="radio" name="experiencia" value="Sim"><span class="checkmark"></span>Sim</label>
+                    <label><input type="radio" name="experiencia" value="Não"><span class="checkmark"></span>Não</label>
+                </div>
+
+                <div class="textarea-group off">
+                    <textarea rows="4" id="descExperiencia" disabled placeholder="Quais experiências?"></textarea>
+                </div>
+
+                <div class="radio-group">
+                    <label>Trabalhou com programação?<span style="color: red;">*</span></label>
+                    <label><input type="radio" name="trabalho" value="Sim"><span class="checkmark"></span>Sim</label>
+                    <label><input type="radio" name="trabalho" value="Não"><span class="checkmark"></span>Não</label>
+                </div>
+
+                <div class="textarea-group off">
+                    <textarea rows="4" id="descTrabalho" disabled
+                        placeholder="Em que empresa/projeto atuou?"></textarea>
+                </div>
+
+                <div class="btn-group">
+                    <button id="btnEnviar">
+                        <span>Enviar</span>
+                    </button>
+                </div>
+
+            </div>
+
+            <div id="modalError" class="modalAlerta">
+                <div class="modal">
+                    <button id="btnFechar" class="fechar">x</button>
+                    <p id="msgError"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<!-- Script js (Geral) -->
+<script src="cursoDev.js" type="module"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- jQuery Mask Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#telefone').mask('(00) 00000-0000')
+        $('#dataNascimento').mask('00/00/0000')
+        $('#cpf').mask('000.000.000-00')
+        $('#numero').mask('0000000000')
+        $('#cep').mask('00000-000')
+    })
+</script>
+
+</html>

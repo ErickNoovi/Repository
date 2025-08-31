@@ -1,0 +1,51 @@
+/*Arvore 1*/
+.tree1 {
+    position: absolute;
+    width: 5vw;
+    top: 22vw;
+    left: 1vw;
+}
+
+.tree2 {
+    position: absolute;
+    width: 5vw;
+    top: 22vw;
+    left: 10vw;
+    transform: scale(3);
+}
+
+.tree3 {
+    position: absolute;
+    width: 5vw;
+    top: 37vw;
+    left: 24vw;
+    transform: scale(3);
+    z-index: 1;
+}
+
+.tree4 {
+    position: absolute;
+    width: 5vw;
+    top: 30vw;
+    left: 40vw;
+    transform: scale(3);
+    z-index: 1;
+}
+
+.tree5 {
+    position: absolute;
+    width: 5vw;
+    top: 30vw;
+    left: 52vw;
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+.tree6 {
+    position: absolute;
+    width: 5vw;
+    top: 30vw;
+    left: 72vw;
+    transform: scale(2.2);
+    z-index: 5;
+}

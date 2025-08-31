@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.containerGlobal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e5e5e5;
+}
+
+.containerGlobal .title {
+    margin: 10px 0px;
+    font-size: 3rem;
+    color: #1D4ED8;
+}
+
+.containerGlobal .subtitle {
+    color: #4b77f3;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.contents-global {
+    display: flex;
+    flex-direction: column;
+}
+
+.contents {
+    display: none;
+    flex-direction: column;
+    box-shadow: 0px 0px 2px #353535;
+    border-radius: 5px;
+    padding: 5px;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: whitesmoke;
+    min-width: 60vw;
+    margin: 1vw 8vw;
+}
+
+.contents.active {
+    display: flex;
+}
+
+.info-basic {
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px;
+}
+
+.info-basic span {
+    color: #bcb9b9;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: end;
+}
+
+.info-basic span button {
+    border: none;
+    background: transparent;
+    margin: 0px 5px;
+    color: #bcb9b9;
+    cursor: pointer;
+}
+
+.info-basic span button:hover {
+    color: black;
+}
+
+.info-basic h1 {
+    font-size: 2.3rem;
+}
+
+.info-basic p {
+    color: #7a7a7a;
+}
+
+.content-inputgroup {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 8px auto;
+    margin-left: 18px;
+    min-width: 45%;
+}
+
+.input-group label {
+    color: black;
+    font-weight: 550;
+    font-size: 20px;
+}
+
+.input-group label span {
+    color: #dc2626;
+}
+
+.input-group input {
+    background: #e5e5e5;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    padding: 5px 3px;
+    width: 100%;
+}
+
+.input-group .erro-msg {
+    color: #dc2626;
+    font-style: oblique;
+    font-weight: 550;
+    display: none;
+}
+
+.input-group input.active {
+    border: 1px solid #dc2626;
+    box-shadow: 0px 0px 2px #dc2626;
+}
+
+input.active .erro-msg {
+    display: flex;
+}
+
+.input-group select {
+    background: #e5e5e5;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    padding: 5px 3px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.titleInputs {
+    margin: 0px 16px;
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.buttonDiv button {
+    background: #3f6ce8;
+    color: whitesmoke;
+    box-shadow: 0px 0px 5px #3f6ce8;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.buttonDiv button:hover {
+    letter-spacing: 1px;
+    background: #3052ae;
+    box-shadow: 0px 0px 5px #3052ae;
+}
+
+.contents2 {
+    display: none;
+    flex-direction: column;
+    box-shadow: 0px 0px 2px #353535;
+    border-radius: 5px;
+    padding: 5px;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: whitesmoke;
+    min-width: 60vw;
+    margin: 1vw 8vw;
+}
+
+.pagTitle {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.pagTitle select {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px black;
+    cursor: pointer;
+    outline: none;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.cards .card {
+    margin: 10px 5px;
+    flex: 1;
+    box-shadow: 0px 0px 1px black;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3px;
+}
+
+.cards .card h1 {
+    text-align: center;
+}
+
+.cards .card button {
+    padding: 5px 0px;
+    font-size: 18px;
+    color: whitesmoke;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+/*Cards button*/
+/*Basico*/
+.btnPlano.basico {
+    background: #1D4ED8;
+    box-shadow: 2px 2px 1px #112e7f;
+    transition: 0.5s ease;
+}
+
+.btnPlano.basico:hover {
+    letter-spacing: 0.5px;
+    background: #3f6ce8;
+}
+
+.btnPlano.intermediario {
+    background: #1B5E20;
+    box-shadow: 2px 2px 1px #0d2d0f;
+    transition: 0.5s ease;
+}
+
+.btnPlano.intermediario:hover {
+    letter-spacing: 0.5px;
+    background: #2d8131;
+}
+
+.btnPlano.premium {
+    background: #d8a61d;
+    box-shadow: 2px 2px 1px #826412;
+    transition: 0.5s ease;
+}
+
+.btnPlano.premium:hover {
+    letter-spacing: 0.5px;
+    background: #edbe3c;
+}
+
+/*Formas de pagamento*/
+.boxSelect {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.boxSelect select {
+    position: relative;
+}
+
+.boxSelect .erro-pag {
+    position: absolute;
+    z-index: 999;
+    top: 25px;
+    display: none;
+    font-style: italic;
+    font-size: 15px;
+    color: #dc2626;
+}
+
+.erro-pag.active {
+    display: flex;
+}

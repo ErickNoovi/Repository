@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #d8d8d8;
+}
+
+header {
+    position: fixed;
+    box-shadow: 0px 0px 3px gray;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    flex-wrap: wrap;
+    z-index: 999;
+}
+
+.nav1,
+.nav2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav1 {
+    margin-left: 10px;
+}
+
+.nav1 a {
+    font-size: 25px;
+    color: black;
+    font-weight: 550;
+    transition: 0.5s ease;
+}
+
+.nav2 {
+    gap: 20px;
+    margin-right: 15px;
+    flex-wrap: wrap;
+}
+
+.nav2 .link {
+    color: black;
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+
+.link.search {
+    font-size: 18px;
+}
+
+.nav1 a:hover {
+    letter-spacing: 1px;
+}
+
+.nav2 a:hover {
+    letter-spacing: 1px;
+}
+
+.input-box {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+}
+
+.input-box input {
+    transition: 0.5s ease;
+    position: relative;
+    display: flex;
+    width: 0;
+    left: -15px;
+    padding: 5px 10px;
+    padding-left: 40px;
+    border-radius: 15px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 1.5px black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-box p {
+    z-index: 1;
+    position: relative;
+    left: 20px;
+}
+
+.input-box.active {
+    display: flex;
+}
+
+.input-box.active input {
+    animation: aparecer 1s ease forwards;
+    transition: 0.5s ease;
+}
+
+@keyframes aparecer {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 300px;
+    }
+}
+
+/*Contéudo principal*/
+
+.container {
+    margin-top: 2vw;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+}
+
+.section1 {
+    width: 90%;
+    padding: 5px;
+    border-radius: 10px;
+    background: whitesmoke;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*3 colunas*/
+    grid-template-rows: 1fr 1fr;
+    /* 2 linhas*/
+    gap: 5px;
+    height: 500px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(60%);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.galeria img:hover {
+    filter: brightness(100%);
+}
+
+.galeria .grande {
+    grid-row: 1 / span 2;
+    /*Ocupa 2 linhas*/
+    grid-column: 2;
+}
+
+.img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img h1 {
+    position: absolute;
+    color: #f5f5f573;
+    transition: 0.5s ease;
+    opacity: 0;
+    user-select: none;
+    cursor: pointer;
+    margin: auto;
+}
+
+.dateImg {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 100%;
+    top: 80%;
+    cursor: pointer;
+}
+
+.dateImg a {
+    color: #f5f5f573;
+    transition: 0.5s ease;
+    opacity: 0;
+    user-select: none;
+    cursor: pointer;
+    margin: auto;
+}
+
+.img:hover h1,
+.img:hover a {
+    opacity: 1;
+}
+
+/*Sessão 2*/
+.section2 {
+    background: whitesmoke;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw 0;
+}
+
+.section2box {
+    width: 80vw;
+}
+
+.title {
+    font-size: 35px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px gray;
+}
+
+.card h1 {
+    margin: 5px 0px;
+}
+
+.card p {
+    letter-spacing: 0.5px;
+    margin: 5px 0px;
+}
+
+.card button {
+    padding: 5px 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    border: 1px solid black;
+    transition: 0.5s ease;
+}
+
+.card button:hover {
+    background: black;
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+
+    /* Header mais compacto */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav1 a {
+        font-size: 20px;
+    }
+
+    .nav2 {
+        gap: 10px;
+        margin-right: 0;
+        flex-wrap: wrap;
+    }
+
+    .nav2 .link {
+        font-size: 16px;
+    }
+
+    .input-box.active input {
+        width: 200px;
+        /* menor para telas pequenas */
+    }
+
+    /* Galeria vira 1 coluna */
+    .galeria {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
+    }
+
+    .galeria .grande {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    /* Cards empilhados melhor */
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Ainda mais compacto para celular */
+    .nav1 a {
+        font-size: 18px;
+    }
+
+    .input-box.active input {
+        width: 150px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .card h1 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .card button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}

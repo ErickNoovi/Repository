@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #f5cb4d;
+}
+
+/*Modal geral de Registro/Login*/
+.modalAuth{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modallogin{
+    position: absolute;
+    display: none;
+    width: 30%;
+    background: #5c2f5d;
+    padding: 1vw;
+    border-radius: 1vw;
+    opacity: 0;
+    transform: translateX(-300px);
+    animation: Sumirlogin 1s ease forwards;
+}
+
+.modallogin.active{
+    display: inline;
+    animation: AparecerLog 1s ease forwards alternate;
+    animation-delay: 0.3s;
+}
+
+@keyframes AparecerLog{
+    0%{
+        opacity:0;
+        transform: translateX(-300px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes Sumirlogin {
+    0%{
+        display: inline;
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100%{
+        display: none;
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+}
+
+
+.modallogin h1{
+    font-size: 3vw;
+    text-align: center;
+    color: #FFC107;
+    margin: 1vw;
+}
+
+.modallogin label{
+    color: #FFC107;
+    font-size: 1.6vw;
+    display: flex;
+    margin: 0.3vw 0.5vw;
+}
+
+.modallogin input{
+    display: flex;
+    margin-bottom: 1vw;
+    width: 100%;
+    height: 2.5vw;
+    border-radius: 1vw;
+    padding: 1.5vw 0.5vw;
+    border: 0.2vw solid #E6DAF2;
+    font-size: 1.5vw;
+    background: transparent;
+    outline: none;
+    color: #FFC107;
+    transition: 0.5s ease;
+}
+
+/*Quando haver texto dentro do input*/
+.modallogin input.digitado{
+    border: 0.2vw solid #9f639f;
+}
+
+.modallogin input::placeholder{
+    color: #e6daf269;
+}
+
+.modallogin input:focus{
+    border: 0.2vw solid #42902d;
+}
+
+.textforregister{
+    color: #FFC107;
+    font-size: 1.5vw;
+}
+
+.textforregister a{
+    color: #E6DAF2;
+    text-decoration: none;
+    font-weight: 1000;
+    transition: 0.5s ease;
+}
+
+.textforregister a:hover{
+    letter-spacing: 0.1vw;
+    text-decoration: underline;
+}
+
+.btnLogin{
+    margin-top: 1vw;
+    font-size: 1.5vw;
+    width: 100%;
+    padding: 0.5vw 1vw;
+    border-radius: 0.5vw;
+    border: none;
+    color: #5c2f5d;
+    text-decoration: none;
+    background: #FFC107;
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-weight: 600;
+    letter-spacing: 0.2vw;
+}
+
+.btnLogin:hover{
+    padding: 1vw 3vw;
+    background: #ffbf00;
+    letter-spacing: 0.5vw;
+}
+
+/*Registre-se*/
+.modalregister{
+    position: absolute;
+    display: none;
+    width: 30%;
+    background: #5c2f5d;
+    padding: 1vw;
+    border-radius: 1vw;
+    opacity: 0;
+    transform: translateX(300px);
+    animation: Sumirreg 1s ease forwards;
+}
+
+.modalregister.active{
+    display: Inline;
+    animation: Aparecerreg 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes Aparecerreg{
+    0%{
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes Sumirreg{
+    0%{
+        display: inline;
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        display: none;
+        opacity: 0;
+        transform: translateX(300px);
+    }
+}
+
+.modalregister h1{
+    font-size: 3vw;
+    text-align: center;
+    color: #FFC107;
+    margin: 1vw;
+}
+
+.modalregister label{
+    color: #FFC107;
+    font-size: 1.6vw;
+    display: flex;
+    margin: 0.3vw 0.5vw;
+}
+
+.modalregister input{
+    display: flex;
+    margin-bottom: 1vw;
+    width: 100%;
+    height: 2.5vw;
+    border-radius: 1vw;
+    padding: 1.5vw 0.5vw;
+    border: 0.2vw solid #E6DAF2;
+    font-size: 1.5vw;
+    background: transparent;
+    outline: none;
+    color: #FFC107;
+    transition: 0.5s ease;
+}
+
+/*Quando haver texto dentro do input*/
+.modalregister input.digitado{
+    border: 0.2vw solid #9f639f;
+}
+
+.modalregister input::placeholder{
+    color: #e6daf269;
+}
+
+.modalregister input:focus{
+    border: 0.2vw solid #42902d;
+}
+
+.textforlogin{
+    color: #FFC107;
+    font-size: 1.5vw;
+}
+
+.textforlogin a{
+    color: #E6DAF2;
+    text-decoration: none;
+    font-weight: 1000;
+    transition: 0.5s ease;
+}
+
+.textforlogin a:hover{
+    letter-spacing: 0.1vw;
+    text-decoration: underline;
+}
+
+.btnRegister{
+    margin-top: 1vw;
+    font-size: 1.5vw;
+    width: 100%;
+    padding: 0.5vw 1vw;
+    border-radius: 0.5vw;
+    border: none;
+    color: #5c2f5d;
+    text-decoration: none;
+    background: #FFC107;
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-weight: 600;
+    letter-spacing: 0.2vw;
+}
+
+.btnRegister:hover{
+    padding: 1vw 3vw;
+    background: #ffbf00;
+    letter-spacing: 0.5vw;
+}
+
+#textocupancy,
+#textocupancylogin{
+    font-size: 1.5vw;
+}
+
+/*Mobile*/
+@media (max-width: 760px) and (max-height: 490px){
+
+    .modallogin,
+    .modalregister{
+        min-width: 35vw;
+        transform: scale(1.5);
+    }
+
+}
+
+@media (max-width: 400px) and (max-height: 490px){
+
+    .modallogin,
+    .modalregister{
+        min-width: 35vw;
+        transform: scale(2);
+    }
+}
+
+@media (max-width: 320px) and (max-height: 490px){
+
+    .modallogin,
+    .modalregister{
+        min-width: 35vw;
+        transform: scale(2.5);
+    }
+
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="coffe.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe | Website</title>
+</head>
+
+<body>
+
+    <main class="container">
+        <section class="section1">
+
+            <div class="content1">
+                <h1><strong>O Sabor que <strong class="textStrong">Acorda</strong> Seus <strong
+                            class="textStrong">Sentidos</strong></strong></h1>
+                <p>Sinta o aroma e viva a experiência de um café feito com paixão, do grão à sua xícara.</p>
+                <div class="box-button">
+                    <button id="buttonLink" onmouseleave="desanimar()" onmouseenter="animar()" class="btn">
+                        <span class="textBtn">Experimentar</span>
+                        <span class="emojiBtn">☕</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="content2">
+                <div class="contentImg">
+                    <img src="img/nathan-dumlao-vbt-Fp3b5FA-unsplash.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="content3">
+                <nav class="navLinks">
+                    <a href="#">Inicio</a>
+                    <a href="#">Cardapio</a>
+                    <a href="#">Sobre nós</a>
+                    <a href="#">Contato</a>
+                </nav>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+<script>
+
+    const btn = document.getElementById("buttonLink")
+
+    function animar() {
+        btn.classList.add('active')
+    }
+
+    function desanimar() {
+        btn.classList.remove('active')
+    }
+</script>
+
+</html>

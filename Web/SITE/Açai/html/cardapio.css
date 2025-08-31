@@ -1,0 +1,300 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  padding: 20px;
+}
+
+/* Cabeçalho fixo */
+.body-head2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #4b1753;
+  padding: 15px;display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100vw;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.processing {
+  font-size: 24px;
+}
+
+.dots p {
+  position: relative;
+  display: inline-flex;
+  justify-content: left;
+  align-items: left;
+  margin-left: 5px;
+  animation: blink 1s infinite;
+  font-size: 28px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+
+.point2 { animation-delay: 0.2s; }
+.point3 { animation-delay: 0.4s; }
+
+/* Área de formulário */
+.info-delivery {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.information {
+  font-size: 1.4rem;
+}
+
+.information label,
+.caixa label,
+.tituloescolha label,
+.payOptions label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+input[type="text"], input[type="tel"], input[type="number"], input[type="radio"], input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="text"],
+.inputtrococlass {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Títulos e blocos de copo */
+.tituloescolha {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.boxlabel300ml .label300ml,
+.boxlabel400ml .label400ml,
+.boxlabel500ml .label500ml{
+  display: flex;
+  justify-content: center;
+}
+
+.copo1, .copo2, .copo3 {
+  display: inline-block;
+  width: 30.5%;
+  padding: 10px;
+  margin: 10px 1%;
+  background: #fff;
+  border-radius: 12px;
+  border: 2px solid #ccc;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.copo1:has(input:checked){
+  border: 2px solid #4b1753;
+}
+
+.copo2:has(input:checked){
+  border: 2px solid #4b1753;
+}
+
+.copo3:has(input:checked){
+  border: 2px solid #4b1753;
+}
+
+.copo1:hover, .copo2:hover, .copo3:hover {
+  border-color: #4b1753;
+  transform: scale(1.05);
+}
+
+.img300ml, .img400ml, .img500ml {
+  width: 70px;
+  margin: 10px auto;
+}
+
+.price1, .price2, .price3 {
+  font-size: 16px;
+  color: #4b1753;
+}
+
+/* Caixa de adicionais */
+.caixa {
+  margin-top: 20px;
+}
+
+.caixa h2,
+.tituloescolha,
+.information{
+  font-weight: 700;
+  color: #4b1753;
+}
+
+.caixa label {
+  display: inline-block;
+  width: calc(50% - 10px);
+  margin: 5px;
+  font-size: 1.4rem;
+}
+
+.saborvalue {
+  font-size: 14px;
+  color: #888;
+  margin-left: 10px;
+}
+
+/* Resumo de preço */
+.resumo-preco {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    padding: 15px 20px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    max-width: 250px;
+    width: 100%;
+}
+.resumo-preco p, .resumo-preco h3 {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.resumo-preco h3 {
+    font-weight: bold;
+    font-size: 16px;
+    color: #4b1753; /* Roxo escuro */
+}
+
+/* Opções de pagamento */
+.payOptions {
+  margin-top: 30px;
+}
+
+.payment-card {
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.payment-card:has(input:checked){
+  border: 2px solid #4b1753;
+}
+
+label#cardDinheiro:has(input[type="radio"]:checked) {
+  border: 2px solid #4b1753; /* cor desejada */
+}
+
+.payment-card:hover {
+  border-color: #4b1753;
+  background: #f2e3f9;
+}
+
+.paySymbol {
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+#cardDinheiro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#cardDinheiro .inputtrococlass {
+    margin-left: auto;
+    max-width: 120px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Botão Enviar */
+#enviarPedido {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #4b1753;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#enviarPedido:hover {
+  background-color: rgb(86, 43, 139);
+}
+
+.textareaclass{
+  width: 100%;
+  padding: 5px 5px;
+  resize: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .copo1, .copo2, .copo3 {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .caixa label {
+    width: 100%;
+  }
+
+ #cardDinheiro {
+    display: flex;
+    margin-left: auto;
+    max-width: 700px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#cardDinheiro .inputtrococlass{
+  display: flex;
+}
+
+  .payment-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

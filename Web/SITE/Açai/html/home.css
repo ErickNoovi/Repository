@@ -1,0 +1,709 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #FFC107;
+}
+
+body, html{
+    scroll-behavior: smooth;
+}
+
+/*Cabeçalho*/
+/*Informações da pagina*/
+.header-contentbox{
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    background: #4A154B ;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    z-index: 999;
+    transition: 0.5s ease;
+}
+
+.active{
+    background: #E6DAF2;
+}
+
+.active .header-content1 a {
+    color: #4A154B;
+}
+
+.active .header-content2 a {
+    color: #4A154B;
+}
+
+.active .header-content2 a:hover{
+    color: #4a154b71;
+}
+
+.active .linkActived{
+    border-bottom: 0.2vw solid #4A154B;
+}
+
+.active .header-content3{
+    border: 0.2vw solid #4A154B;
+}
+
+.active .header-content3 a {
+    color: #4A154B;
+}
+
+.active .header-content3:hover{
+    background: #4A154B;
+}
+
+.active .header-content3:hover a {
+    color: #E6DAF2;
+}
+
+/*Botão whatsapp "Pedir já"*/
+.header-content1{
+    position: fixed;
+    display: flex;
+    left: 1vw;
+}
+
+.header-content1 a{
+    color: #FFC107;
+    text-decoration: none;
+    font-weight: 650;
+    font-size: 2.3vw;
+    transition: 0.5s ease;
+}
+
+.header-content1 a:hover{
+    letter-spacing: 3px;
+}
+
+/*Conteudo principal*/
+.header-content2{
+    display: flex;
+    padding: 1vw;
+    z-index: 999;
+}
+
+.header-content2 a{
+    margin: 0vw 2vw;
+    text-decoration: none;
+    color: #FFC107;
+    font-weight: 650;
+    font-size: 2vw;
+    transition: 0.5s ease;
+}
+
+.header-content2 a:hover{
+    color: #9e7806;
+}
+
+/*Customização do link ao estar dentro da sessão que se adequa a ele */
+.linkActived{
+     border-bottom: 0.2vw solid #FFC107;
+}
+
+/*Conteudo do login*/
+.header-content3{
+    display: flex;
+    margin: 1vw;
+    border: 0.2vw solid #FFC107;
+    border-radius: 1vw;
+    transition: 0.5s ease;
+}
+
+.header-content3 a{
+    margin: 0vw 2vw;
+    text-decoration: none;
+    color: #FFC107;
+    font-weight: 650;
+    font-size: 2vw;
+    transition: 0.5s ease;
+}
+
+.header-content3:hover{
+    background: #FFC107;
+}
+
+.header-content3:hover a{
+    color: #4A154B;
+}
+
+/*Barra de scroll*/
+::-webkit-scrollbar{
+    background: transparent;
+    width: 0px;
+}
+
+/*Conteudo da pagina*/
+/*Contedo principal "Main"*/
+main{
+    margin-top: 5.2vw;
+    background: #FFC107;
+    width: 100%;
+    padding: 1vw;
+}
+
+/*Corpo dos conteudos principais*/
+.section1{
+    border: 0.2vw solid #4A154B;
+    border-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vw;
+}
+
+/*Conteúdo 1*/
+
+.section1-content1{
+    width: 50%;
+    padding: 1vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.section1-boximg1{
+    background: #4A154B;
+    border-radius: 100%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.section1-boximg1 img{
+    width: 35vw;
+}
+
+.section1-boximg1.animar{
+    animation: Aumentar 1s ease infinite;
+}
+
+/*Animação da imagem do conteúdo principal*/
+@keyframes Aumentar {
+    0%{
+        transform: scale(1.0);
+    }
+    10%,20%{
+        transform: scale(1.1);
+    }
+
+    40%,50%{
+        transform: scale(1.0);
+    }
+
+    70%{
+        transform: scale(1.1);
+    }
+
+    100%{
+        transform: scale(1.0);
+    }
+}
+
+/*Conteúdo 2*/
+.section1-content2{
+    width: 50%;
+    min-height: 100%;
+    flex:1 1 500px;
+}
+
+.section1-content2 h1{
+    font-size: 4vw;
+    text-align: center;
+}
+
+.section1-content2 h2{
+    margin-top: 1vw;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.section1-content2 a{
+    position: relative;
+    top: 5vw;
+    margin: 0vw 4vw;
+    text-decoration: none;
+    font-size: 2.5vw;
+} 
+
+/*Link main ("Whatsapp")*/
+.btnWhatsapp{
+    color: #FFC107;
+    background: #4A154B;
+    padding: 0.5vw 1vw;
+    transition: 0.5s ease;
+    box-shadow: 0.5vw 0.5vw 0.2vw #00000095;
+}
+
+.btnWhatsapp:hover{
+    margin: 0vw 3.5vw;
+    letter-spacing: 0.2vw;
+}
+
+/*Link main ("Cardapio")*/
+.btnCardapio{
+    color: #FFC107;
+    background: #4A154B;
+    box-shadow: 0.5vw 0.5vw 0.3vw #00000095;
+    padding: 0.5vw 1vw;
+    transition: 0.5s ease;
+}
+
+.btnCardapio:hover{
+    margin: 0vw 3.5vw;
+    letter-spacing: 0.2vw;
+}
+
+/*Sessão 2 "Monte seu açai!"*/
+.section2{
+    flex-wrap: wrap;
+    background:#4A154B ;
+    width: 100%;
+    overflow: hidden;
+    padding: 1vw;
+    box-sizing: border-box;
+}
+
+.section2-title{
+    font-size: 4vw;
+    color: #FFC107;
+    text-align: center;
+}
+
+/*Box geral da sessão dos cards*/
+.section2-content1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 1vw;
+    border-radius: 1vw;
+}
+
+.card-content{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+}
+
+.cards{
+    display: block;
+    box-shadow: 0vw 0vw 1vw black;
+    border-radius: 1vw;
+    margin: 0vw 1vw;
+    padding: 0.5vw;
+    width: 30vw;
+    height: 85%;
+    background: #4A154B;
+    overflow: hidden;
+}
+
+.cards-boximg{
+    display: flex;
+    border-radius: 1vw;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.cards-boximg img{
+    object-fit: cover;
+    display: flex;
+    width: 100%;
+}
+
+.cards h1{
+    color: #feefda ;
+    font-size: 2vw;
+}
+
+.cards h1 strong{
+    color: #955996;
+    transition: 0.5s ease;
+}
+
+.cards:hover h1 strong{
+    color: #FFC107;
+}
+
+.cards p{
+    font-size: 1.7vw;
+    color: #E6DAF2  ;
+}
+
+.cards .linkCard{
+    display: flex;
+    background: #390e3a;
+    border-radius: 0.5vw;
+    color: #5f435f;
+    font-weight: 1000;
+    font-size: 2vw;
+    text-decoration: none;
+    padding: 1vw 9.5vw;
+    width: 100%;
+    margin-top: 5vw;
+    transition: 0.5s ease;
+}
+
+.cards:hover .linkCard{
+    color: #ad78ae;
+}
+
+.cards:hover .linkCard:hover{
+    color: #FFC107;
+}
+
+/*Sessão 3 "Copos em destaques"*/
+.section3{
+    width: 100%;
+    background: #FFC107 ;
+}
+
+.section3 h1{
+    font-size: 4vw;
+    text-align: center;
+    margin: 1vw 0vw;
+}
+
+.section3-content1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copo-card{
+    width: 30%;
+    box-shadow: 0vw 0vw 1vw black;
+    border-radius: 1vw;
+    margin: 0vw 1vw;
+    padding: 1vw;
+    background: #FFC107;
+    filter: blur(0.2vw);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.copo-card:hover{
+    filter: blur(0);
+}
+
+.destaque{
+    background: #FFC107;
+    box-shadow: 0vw 0vw 1vw black;
+    filter: blur(0);
+    transform: scale(1.02);
+}
+
+.copocard-boximg{
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 1vw;
+}
+
+.copocard-boximg img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.copo-card h3{
+    color: #4A154B;
+    margin: 1vw 0vw;
+    font-size: 2vw;
+}
+
+.copo-card p{
+    font-size: 1.7vw;
+    margin-bottom: 2vw;
+}
+
+.copo-card span{
+    font-size: 1.3vw;
+    font-weight: 900;
+}
+
+.copo-card span strong{
+    color: #691a6b;
+}
+
+.copo-card button{
+    display: block;
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-radius: 0.5vw;
+    font-weight: 900;
+    background: #4A154B;
+    color: #925f93;
+    padding: 1vw 0.5vw;
+    font-size: 1.5vw;
+    margin-top: 1vw;
+    transition: 0.5s ease;
+}
+
+.copo-card button:hover{
+    color: whitesmoke;
+    text-shadow: 0vw 0vw 0.1vw whitesmoke;
+    cursor: pointer;
+    background: #691a6b;
+}
+
+@media (max-width:800px) and (max-height:490px){
+    .section1{
+       flex-wrap: wrap;
+       min-height: 100vh;
+       margin: 0;
+    }
+
+    .section1-content1{
+        padding:0;
+        width: 100%;
+    }
+
+    .section1-boximg1{
+        width: 60%;
+        height: 50vw;
+    }
+
+    .section1-boximg1 img{
+        width: 100%;
+    }
+
+    .section1-content2{
+        height: 40vh;
+    }
+
+    .section1-content2 h1{
+        font-size: 6vw;
+    }
+
+    .section1-content2 h2{
+        font-size: 3vw;
+    }
+
+    .section1-content2 a{
+        position: relative;
+        left: 25vw;
+        font-size: 3vw;
+    }
+
+    .cards h1{
+        font-size: 2.5vw;
+    }
+
+    .cards p {
+       font-size: 2.2vw;
+    }
+}
+
+@media (max-width:760px) and (max-height:490px){
+    .section2-content1{
+        height: 100vh;
+    }
+
+    .cards-boximg{
+        height: 50%;
+    }
+
+    .cards-boximg img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .cards h1{
+        font-size: 2.5vw;
+    }
+
+    .cards p{
+        font-size: 2.3vw;
+        margin-top: 2vw;
+    }
+
+    .copo-card h3{
+        font-size: 4vw;
+        margin: 0;
+    }
+
+    .copo-card p {
+        font-size: 2vw;
+    }
+
+    .copo-card span{
+        font-size: 2vw;
+    }
+}
+
+@media (max-width:700px) and (max-height: 490px){
+    .section3-content1{
+        flex-wrap: wrap;
+    }
+
+    .copocard-boximg{
+        width: 100%;
+        height: 50%;
+    }
+
+    .section3-content1{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:650px) and (max-height: 490px){
+    .section2{
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .section2-content1{
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .card-content{
+        height: auto;
+        display: inline;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .cards{
+        width: 70%;
+        margin-bottom: 3vw;
+        height: auto;
+    }
+
+    .cards-boximg{
+        height: 20%;
+    }
+
+    .cards h1{
+        font-size: 5vw;
+    }
+
+    .cards p{
+        font-size: 3.5vw;
+    }
+
+    .cards .linkCard{
+        padding: 2vw 25vw;
+        font-size: 4vw;
+    }
+
+    .section3-content1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .copo-card{
+        width: 70%;
+        filter: blur(0);
+        margin: 2vw 0;
+        transform: scale(1);
+    }
+
+    .copo-card h3{
+        font-size: 4vw;
+    }
+
+    .copo-card p{
+        font-size: 3vw;
+    }
+
+    .copo-card span{
+        font-size: 2.5vw;
+    }
+
+    .copo-card button{
+        font-size: 3vw;
+    }
+}
+
+@media (max-width:500px) and (max-height: 490px){
+    .section1{
+        height: 100vh;
+    }
+    
+    .section1-content2{
+        height: auto;
+    }
+
+    .section1-content2 h1{
+        margin-top: 4vw;
+    }
+
+    .section1-boximg1{
+        height: auto;
+    }
+}
+
+@media (max-width:470px) and (max-height: 490px){
+    .section1-content1{
+        height: 65vh;
+    }
+
+    .section1-boximg1{
+        width: 70vw;
+    }
+}
+
+@media (max-width:420px) and (max-height: 490px){
+    .section1-content1{
+        height: 65vh;
+    }
+
+    .section1-boximg1{
+        width: 70vw;
+    }
+
+    .section1-content2 h1{
+        font-size: 8vw;
+    }
+
+    .section1-content2 h2{
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width:420px) and (max-height: 490px){
+
+    .section1-boximg1{
+        width: 80%;
+    }
+}
+
+@media (max-width: 370px) and (max-height: 490px){
+
+    .section1-boximg1{
+        width: 90%;
+    }
+
+    .section1-content2 h1{
+        margin-top: 1.5vw;
+    }
+
+    .section1-content2 h2{
+        font-size: 5vw;
+    }
+
+    .section1-content2 a{
+        font-size: 4.5vw;
+        margin-left: 0vw;
+    }
+}

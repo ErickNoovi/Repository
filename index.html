@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--Icones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--Css loader-->
+    <link rel="stylesheet" href="loader.css">
+    <!--SpinKit-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spinkit/2.0.1/spinkit.min.css">
+    <!-- Wicked CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kristofferandreasen/wickedCSS/dist/wickedcss.min.css">
+    <!--Tippy (Tooltip)-->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <!--Css-->
+    <link rel="stylesheet" href="home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio by Erick Victor</title>
+</head>
+
+<body>
+
+    <!--Carregar pagina-->
+    <div id="loader" class="loader">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+
+    <header id="headerid" class="header-container">
+        <!--Nome-->
+        <nav class="nav1 animated fadeIn">
+            <a id="link-name" href="#">Erick V1ctor</a>
+        </nav>
+        <!--Links-->
+        <nav class="nav2 animated fadeIn">
+            <a href="#inicio">Inicio</a>
+            <a href="#projetos">Projetos</a>
+            <a class="btnContato" href="#">Contato</a>
+            <a class="btnSobre" href="#">Sobre</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="inicio" class="section1 animated fadeIn">
+            <div class="content1">
+                <h1>Olá, sou o <strong>Erick</strong></h1>
+                <p>Sou <strong class="strong1">Web Designer</strong> e Desenvolvedor <strong
+                        class="strong2">Full-stack</strong>, com experiência em <strong class="strong3">HTML</strong>,
+                    <strong class="strong4">CSS</strong> e conhecimento em
+                    <strong class="strong5">JavaScript</strong>.
+                </p>
+                <div class="title-midia">
+                    <h1>Redes sociais</h1>
+                </div>
+                <div class="link-box">
+                    <a class="link-whatsapp" href="https://wa.me/17996440967" target="_blank">Whatsapp</a>
+                    <a class="link-discord" href="https://discord.com/users/T6xth_#6159" target="_blank">Discord</a>
+                    <a class="link-instagram" href="https://www.instagram.com/er1ck.v1ctor/"
+                        target="_blank">Instagram</a>
+                    <a class="link-github" href="https://github.com/ErickNoovi" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="content2">
+                <div class="img-box">
+                    <img id="imgUser" src="img/Erick alternative 4.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section2 animated fadeIn">
+
+            <div class="title-section2">
+                <h1>Planejamento</h1>
+            </div>
+
+            <div class="workspace">
+                <!--Card 1-->
+                <div id="card1" class="card card1">
+                    <div class="textarea">
+                        <h1>Projetos</h1>
+                        <p>Seleção dos meus principais trabalhos em web design e desenvolvimento.
+                            Cada projeto une estética moderna, funcionalidade e performance.</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+                <!--Card 2-->
+                <div id="card2" class="card card2">
+                    <div class="textarea">
+                        <h1>Trabalhos</h1>
+                        <p>Trabalhos concluídos que unem HTML, CSS e scripts bem estruturados.
+                            Soluções pensadas para serem responsivas, funcionais e escaláveis.</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+                <!--Card 3-->
+                <div id="card3" class="card card3">
+                    <div class="textarea">
+                        <h1>Habilidades</h1>
+                        <p>Descubra minhas habilidades em programação e desenvolvimento web, e veja como transformo
+                            ideias em projetos funcionais e eficientes.</p>
+                        <button>Ver mais</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer1 animated fadeIn">
+                <p>© 2025 Erick - Todos os direitos reservados.</p>
+                <p>Desenvolvido com 💻 e ☕.</p>
+            </div>
+            <div class="footer2">
+                <!--Link 1-->
+                <div class="footer-link">
+                    <a href="#inicio">Inicio</a>
+                    <a class="btnContato" href="#">Contato</a>
+                    <a href="#inicio">Redes sociais</a>
+                    <a class="btnSobre" href="#">Sobre</a>
+                </div>
+                <!--Link 2 -->
+                <div class="footer-link">
+                    <a href="#projetos">Projetos</a>
+                    <a href="#projetos">Trabalhos</a>
+                    <a href="#projetos">Habilidades</a>
+                </div>
+            </div>
+        </footer>
+
+        <!--Modal de Sobre min-->
+        <div id="modalSobre" class="modal-sobre">
+            <div id="modalSobreBox" class="modal">
+                <div class="box-sobre">
+                    <h1>Sobre min</h1>
+                    <p>Meu nome é Erick, tenho 18 anos e moro em Bálsamo. Atualmente trabalho na Noovi, pertencente à
+                        empresa Betta Global Partner, onde comecei minha trajetória profissional como programador. Este
+                        é o
+                        meu primeiro emprego formal na área de desenvolvimento, e desde então venho aprimorando minhas
+                        habilidades em programação, por exemplo em codificação.<br><br>
+
+                        Além do trabalho, realizo freelances em desenvolvimento Web, focando principalmente em HTML e
+                        CSS,
+                        com conhecimentos iniciais em JavaScript. Meu objetivo é crescer como web designer e
+                        desenvolvedor
+                        front-end, criando sites funcionais, esteticamente agradáveis e com boa experiência para os
+                        usuários.<br><br>
+
+                        Sempre busco aprender novas tecnologias para expandir meu portfólio e minha
+                        carreira na área de desenvolvimento web e digital.</p>
+                </div>
+                <button id="btnFechar2" class="btnFechar sobre">x</button>
+            </div>
+        </div>
+
+        <!--Modal de contato-->
+        <div id="modalContato" class="modal-contato">
+            <div id="modalContatoBox" class="modal contato">
+
+                <!--Informações para entrar em contato-->
+                <div class="boxContato">
+                    <a class="logo-whatsapp" href="https://wa.me/17996440967" target="_blank"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a class="logo-instagram" href="https://www.instagram.com/er1ck.v1ctor/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a class="logo-discord" href="https://discord.com/users/T6xth_#6159" target="_blank"><i
+                            class="fa-brands fa-discord"></i></a>
+                    <a class="logo-github" href="https://github.com/ErickNoovi#" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+
+                <button id="btnFechar" class="btnFechar contato">x</button>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+<!--Tippy js-->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+<!--JS Script-->
+<script type="module" src="home.js"></script>
+<script>
+    //Imagem e nome principal 
+    tippy('#imgUser, #link-name', {
+        content: 'Eu mesmo!',
+        followCursor: true,
+        animation: 'fade',
+        placement: 'top',
+        arrow: false,
+        theme: 'customTheme',
+        duration: [800, 300],
+    })
+    //Link whatsapp
+    tippy('.link-whatsapp', {
+        content: 'Chama no whats!',
+        followCursor: true,
+        animation: 'fade',
+        placement: 'top',
+        arrow: false,
+        theme: 'customWhats',
+        duration: [400, 300],
+    })
+    //Link facebook
+    tippy('.link-discord', {
+        content: 'Adiciona e chama-lá',
+        followCursor: true,
+        animation: 'fade',
+        placement: 'top',
+        arrow: false,
+        theme: 'customFace',
+        duration: [400, 300],
+    })
+    //Link instagram
+    tippy('.link-instagram', {
+        content: 'Segue e chama láá',
+        followCursor: true,
+        animation: 'fade',
+        placement: 'top',
+        arrow: false,
+        theme: 'customInsta',
+        duration: [400, 300],
+    })
+    //Link github
+    tippy('.link-github', {
+        content: 'Gitzin!',
+        followCursor: true,
+        animation: 'fade',
+        placement: 'top',
+        arrow: false,
+        theme: 'customGit',
+        duration: [400, 300],
+    })
+    /*Card 1 (Projetos) - H1*/
+    tippy('#card1 h1', {
+        content: 'Projetos recentes!',
+        followCursor: true,
+        animation: 'fade',
+        placement: 'top',
+        arrow: false,
+        theme: 'customGit',
+        duration: [400, 300],
+    })
+    /*Card 1 (Projetos) - BUTTON*/
+    tippy('#card1 button', {
+        content: 'Veja meus projetoss!',
+        followCursor: true,
+        animation: 'fade',
+        placement: 'right',
+        arrow: false,
+        theme: 'customGit',
+        duration: [400, 300],
+    })
+    /*Card 2 (Projetos) - H1*/
+    tippy('#card2 h1', {
+        content: 'Trabalhos concluídos!',
+        followCursor: true,
+        animation: 'fade',
+        placement: 'top',
+        arrow: false,
+        theme: 'customGit',
+        duration: [400, 300],
+    })
+    /*Card 2 (Projetos) - BUTTON*/
+    tippy('#card2 button', {
+        content: 'Trabalhos entregues, veja!',
+        followCursor: true,
+        animation: 'fade',
+        placement: 'right',
+        arrow: false,
+        theme: 'customGit',
+        duration: [400, 300],
+    })
+    /*Card 3 (Projetos) - H1*/
+    tippy('#card3 h1', {
+        content: 'Programação/Design',
+        followCursor: true,
+        animation: 'fade',
+        placement: 'top',
+        arrow: false,
+        theme: 'customGit',
+        duration: [400, 300],
+    })
+    /*Card 3 (Projetos) - BUTTON*/
+    tippy('#card3 button', {
+        content: 'Conhecimentos pessoais!',
+        followCursor: true,
+        animation: 'fade',
+        placement: 'right',
+        arrow: false,
+        theme: 'customGit',
+        duration: [400, 300],
+    })
+
+</script>
+
+</html>

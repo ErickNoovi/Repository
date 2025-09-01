@@ -3,14 +3,26 @@
 Este é o meu projeto hospedado no **GitHub Pages**.  
 Você pode acessá-lo aqui:  
 
+# Personal
 - Portfolio [Clique para acessar o site](https://ErickNoovi.github.io/Repository/Portfolio/index.html)
-- Formulário [Clique para acessar o site](https://ErickNoovi.github.io/Repository/Projects/Formularios/Compra%20de%20plano%20(Plano%20de%20sa%C3%BAde))
 
 ---
 
-## 📖 Sobre o projeto
-Breve descrição do que o projeto faz, por exemplo:
-> Um site simples de portfólio desenvolvido com HTML, CSS e JavaScript.
+# Forms 
+- Health plan [Clique para acessar o site](https://ErickNoovi.github.io/Repository/Projects/Forms/Health%20plan/index.html)
+- Dev Course [Clique para acessar o site](https://ericknoovi.github.io/Repository/Projects/Forms/Developer%20course%20registration)
+
+---
+
+# Websites
+- Blog Geral [Clique para acessar o site](https://ErickNoovi.github.io/Repository/Projects/Web/Blogs/Blog%20geral/index.html)
+- Draw (House of forest) [Clique para acessar o site](https://ErickNoovi.github.io/Repository/Projects/Web/Draw/House%20of%20forest/index.html)
+
+---
+
+# Landing pages
+- Coffe [Clique para acessar o site](https://ErickNoovi.github.io/Repository/Projects/Web/LANDING%20PAGE/Coffe/index.html)
+- Petshop [Clique para acessar o site](https://ErickNoovi.github.io/Repository/Projects/Web/LANDING%20PAGE/Petshop/index.html)
 
 ---
 
